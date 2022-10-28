@@ -19,6 +19,7 @@ public class Fileupload {
 		driver.get("https://www.sodapdf.com/txt-to-pdf/");
 		System.out.println(driver.getTitle());
 		driver.manage().window().maximize();
+		driver.switchTo().alert().accept();
 		driver.findElement(By.cssSelector(".btn-choose")).click();
 		Runtime.getRuntime().exec("D:\\AutoIT\\Autoit-selenium.exe");
 		// WebDriverWait wait = new WebDriverWait(driver,10);
