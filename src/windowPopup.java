@@ -16,7 +16,7 @@ public class windowPopup {
 		driver.get("https://admin:admin@the-internet.herokuapp.com");
 		driver.findElement(By.linkText("Basic Auth")).click();
 		System.out.println(driver.getTitle());
-		driver.close();
+		
 	}
 
 }
