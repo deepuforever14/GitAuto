@@ -17,6 +17,7 @@ public class Fileupload {
 		System.setProperty("webdriver.chrome.driver","D:\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.sodapdf.com/txt-to-pdf/");
+		driver.manage().window().maximize();
 		driver.findElement(By.cssSelector(".btn-choose")).click();
 		Runtime.getRuntime().exec("D:\\AutoIT\\Autoit-selenium.exe");
 		// WebDriverWait wait = new WebDriverWait(driver,10);
