@@ -24,6 +24,7 @@ public class Fileupload {
         if(f.exists())
         {
         	System.out.println("file found");
+        	driver.close();
         }
 	}
 
